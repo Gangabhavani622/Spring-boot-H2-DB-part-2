@@ -17,7 +17,7 @@ import java.util.*;
 @RestController
 class BookController {
     @Autowired
-    private BookService bookService;
+    public BookService bookService;
 
     @GetMapping("/books")
     public ArrayList<Book> getBooks() {
